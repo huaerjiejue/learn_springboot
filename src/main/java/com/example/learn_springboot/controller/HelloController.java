@@ -2,7 +2,6 @@ package com.example.learn_springboot.controller;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.example.learn_springboot.entity.User;
-import com.example.learn_springboot.service.Impl.UserServiceImpl;
 import com.example.learn_springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-@RestController
+@RestController()
+@CrossOrigin
 public class HelloController {
 
     @Autowired

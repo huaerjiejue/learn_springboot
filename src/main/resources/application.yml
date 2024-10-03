@@ -4,6 +4,15 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/mpj?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
     username: root
     password: p-0p-0
+  application:
+    name: learn_springboot
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  servlet:
+    multipart:
+      max-file-size: 10MB
 
 # Mybatis-plus配置
 mybatis-plus:
@@ -15,3 +24,8 @@ mybatis-plus:
     # 打印sql
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
